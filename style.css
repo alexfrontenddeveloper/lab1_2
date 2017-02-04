@@ -1,0 +1,571 @@
+@font-face 
+{
+    font-family: Days;
+    src: url("font/28_Days.otf");
+}
+@font-face 
+{
+    font-family: Aero;
+    src: url("font/Aero_Matics.ttf");
+}
+@font-face 
+{
+    font-family: Capture;
+    src: url("font/Capture_it.ttf");
+}
+@font-face 
+{
+    font-family: BAUHS;
+    src: url("font/BAUHS93.TTF");
+}
+body, div, a, button
+{
+    font-family: Aero;
+}
+h1
+{
+    box-sizing: border-box; 
+    font-family: Aero;
+    margin: 0;
+}
+.error
+{
+    text-align: center;
+    color: #cc0505;
+    font-size: 20pt; 
+}
+.result header h1
+{
+    font-family: Capture;
+    color: #000;
+    text-shadow: #fff 0px 0px 5px;
+}
+.resalt_img
+{
+    margin: auto;
+    text-align: center;
+}
+.resalt_img>img
+{
+    width: 40%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #cc0505;
+    border-radius: 20px;
+    background: rgba(0,0,0, 0.6)
+}
+body 
+{
+    background: url(./img/WOT-port.png) no-repeat;
+    background-color: #000;
+    background-size: 100%;
+    font-family: Larsseit; 
+    margin: 0;
+    padding: 0;
+}
+h3
+{
+    margin: 0;
+    padding: 10px;
+}
+.preference label
+{
+    color: #fff;
+    margin: 0 0px 0 10px;
+    font-family: Aero;
+}
+.preference select
+{
+    border-color: #fff;
+    border-radius: 5px;
+    margin: 0 0px 0 10px;
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+    font-family: Aero; 
+}
+.preference select option
+{
+   font-family: Aero; 
+    background: #000;
+}
+main 
+{
+  width: 80%;
+  margin: auto;
+  padding-top: 50px; 
+}
+.block 
+{
+  background-color: rgba(255, 255,255, 0);
+}
+  .block > header 
+{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font: 20px Larsseit;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-bottom: 1px solid #cc0505;
+}
+  .block > .content 
+{
+    padding: 22px;
+    overflow: hidden; 
+}
+.no-overflow 
+{
+    overflow: visible !important; 
+}
+.preference header 
+{
+    background: rgba(0,0,0, 0.5); 
+    border-top: 1px solid #cc0505;
+    border-bottom: 1px solid #cc0505;
+}
+.result 
+{
+    height: auto;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+.result header 
+{
+    background-color: rgba(0,0,0, 0.4); 
+}
+.checkSymb, .checkYes, .option 
+{
+    min-height: 30px;
+    margin-bottom: 10px; 
+}
+.checkSymb label, 
+.checkSymb div, 
+.checkSymb select, 
+.checkYes label, 
+.checkYes div, 
+.checkYes select, 
+.option label, 
+.option div, 
+.option select 
+{
+    vertical-align: sub; 
+}
+.checkSymb input[type=checkbox]:not(.checkbox), 
+.checkSymb input[type=radio], 
+.checkYes input[type=checkbox]:not(.checkbox), 
+.checkYes input[type=radio], 
+.option input[type=checkbox]:not(.checkbox), 
+.option input[type=radio] 
+{
+    position: relative;
+    width: 0;
+    margin-left: 5px;
+    margin-right: 60px; 
+}
+.checkSymb input[type=checkbox]:not(.checkbox)::after, 
+.checkSymb input[type=radio]::after, 
+.checkYes input[type=checkbox]:not(.checkbox)::after, 
+.checkYes input[type=radio]::after, 
+.option input[type=checkbox]:not(.checkbox)::after, 
+.option input[type=radio]::after 
+{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    border-radius: 12px;
+    background: #ff6766 url("img/checkSymb.png") no-repeat center;
+    background-size: 38px 15px;
+    cursor: pointer; 
+}
+.checkSymb input[type=checkbox]:not(.checkbox):checked::after, 
+.checkSymb input[type=radio]:checked::after, 
+.checkYes input[type=checkbox]:not(.checkbox):checked::after, 
+.checkYes input[type=radio]:checked::after, 
+.option input[type=checkbox]:not(.checkbox):checked::after, 
+.option input[type=radio]:checked::after 
+{
+    background: #97ce68 url("img/checkSymbChecked.png") no-repeat center;
+    background-size: 41px 15px; 
+}
+.checkSymb input[type=checkbox]:not(.checkbox):active::after, 
+.checkSymb input[type=radio]:active::after, 
+.checkYes input[type=checkbox]:not(.checkbox):active::after, 
+.checkYes input[type=radio]:active::after, 
+.option input[type=checkbox]:not(.checkbox):active::after, 
+.option input[type=radio]:active::after 
+{
+    top: 1px; 
+}
+.checkSymb input[type=checkbox]:not(.checkbox):disabled::after, 
+.checkSymb input[type=radio]:disabled::after, 
+.checkYes input[type=checkbox]:not(.checkbox):disabled::after, 
+.checkYes input[type=radio]:disabled::after, 
+.option input[type=checkbox]:not(.checkbox):disabled::after, 
+.option input[type=radio]:disabled::after 
+{
+    background-color: #808080; 
+}
+.checkSymb .checkbox, .checkYes .checkbox, .option .checkbox 
+{
+    vertical-align: middle; 
+    margin: 0 0 0 10px;
+}
+.checkSymb select, .checkYes select, .option select 
+{
+    padding: 4px 10px 4px 5px; 
+}
+.checkYes input[type=checkbox]:not(.checkbox)::after 
+{
+    background-image: url(img/checkNo.png);
+    background-size: 46px 16px; 
+}
+.checkYes input[type=checkbox]:not(.checkbox):checked::after 
+{
+    background-image: url(img/checkYes.png);
+    background-size: 44px 16px; 
+}
+.info
+{
+    display: inline-block;
+    width: 7px;
+    height: 16px;
+    background: url("img/info.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-left: 5px;
+    position: relative; 
+}
+.info .infoText 
+{
+    display: none;
+    position: absolute;
+    top: -10px;
+    width: 360px;
+    border-radius: 7px;
+    background: #04ce9b url("img/infoWhite.png") no-repeat 12px 10px;
+    background-size: 7px 16px;
+    color: white;
+    padding: 10px 10px 10px 40px; 
+}
+.info .infoText::before 
+{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #a6eedc;
+    border-left: 1px solid #4edcb8;
+    position: absolute;
+    top: 0;
+    left: 30px; 
+}
+.btn:hover, .container>a:hover  
+{
+    color: #000;
+    cursor: pointer;
+}
+.btn.red 
+{
+    background-color: rgba(0,0,0,0.5);
+    border-color: #000;
+    margin-right: 20px;
+    float: right; 
+}
+.btn.red:hover 
+{
+    background-color: #ff7372; 
+}
+.btn.pagination 
+{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    margin-left: 0;
+    margin-right: 10px; 
+}
+.btn.pagination:last-of-type 
+{
+    margin-right: 0; 
+}
+.btn.pagination:hover 
+{
+    background-color: #cc0505;
+    border-bottom: 3px solid brown; 
+}
+.btn.pagination.active 
+{
+    background-color: #cc0505;
+    border-bottom: 3px solid brown; 
+}
+.paginations 
+{
+    margin: 20px 0;
+    text-align: center; 
+}
+.list 
+{
+    background: rgba(255,255,255,0.2); 
+    border: 1px solid #cc0505;
+    border-radius: 5px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    padding: 10px 5px; 
+}
+.list:nth-of-type(2) 
+{
+    display: block; 
+}
+.resultText 
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px; 
+    color: #cc0505;
+}
+.classText 
+{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px; 
+    color: #cc0505;
+}
+.container 
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+.container a 
+{
+    background-color: #8560a8;
+    padding: 6px 17px;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 18px;
+    border-bottom: 4px solid #662d91; 
+}
+.container a:hover 
+{
+    background-color: #946fb6; 
+}
+.container a:active 
+{
+    border-bottom-width: 3px; 
+}
+.line 
+{
+    min-height: 35px;
+    padding: 5px 0; 
+}
+.line input[type=text] 
+{
+    width: 60px;
+    height: 35px;
+    margin-left: 10px; 
+}
+.line .pagination 
+{
+    float: right; 
+}
+fieldset 
+{
+    margin-bottom: 15px; 
+}
+.right 
+{
+    float: right; 
+}
+.code 
+{
+    background-color: #232525;
+    min-height: 28px;
+    padding: 5px;
+    color: #ffc765;
+    font-size: 16px;
+    max-width: 437.2px;
+    word-wrap: break-word; 
+}
+.code span 
+{
+    margin-right: 5px; 
+}
+.code span::before 
+{
+    content: '[';
+    color: #ce7827;
+    margin-right: 3px; 
+}
+.code span::after 
+{
+    content: ']';
+    color: #ce7827;
+    margin-left: 3px; 
+}
+button:disabled 
+{
+    background-color: #ebebe4 !important; 
+}
+button:disabled:hover 
+{
+    background-color: #ebebe4 !important; 
+}
+
+#remove1 
+{
+    float: left; 
+}
+.result fieldset .line.option 
+{
+    margin-bottom: 0; 
+}
+  .result fieldset .line.option .checkSymb::after 
+{
+    margin-top: 5px; 
+}
+  .result fieldset .line.option label 
+{
+    vertical-align: super;
+    cursor: pointer; 
+}
+  .result fieldset .line.option > span 
+{
+    display: inline-block;
+    margin-top: 10px; 
+}
+.lotip 
+{
+    margin: auto;
+    background: url(img/wot-logo.png) no-repeat;
+    width: 400px;
+    height: 150px;
+    background-size: 100% 100%;    
+}
+.two 
+{
+    background-image: url(./img/CT.png);
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.one 
+{
+    background-image: url(./img/LT.png);
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.thre 
+{
+    background-image: url(./img/TT.png);
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.four 
+{
+    background-image: url(./img/PT.png);
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.five 
+{
+    background-image: url(./img/CAU.png);
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hed 
+{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font: 20px Larsseit;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background: rgba(0,0,0, 0.5);
+}
+.preference select:hover 
+{
+    background-color: firebrick;
+}
+.preference select>option:hover 
+{
+    background-color: firebrick;
+}
+.har 
+{
+    border: 1px solid #000;
+}
+.btn, .container>a 
+{
+    text-align: center;
+    margin: 20px 0 0 20px;
+    border: none;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.1;
+    padding: .5em .6em .5em .6em;
+    background: linear-gradient(#cc0505, #cc0555);
+    border-radius: 5px;
+    box-shadow:
+    0 0 0 1px #cc0505 inset,
+    -1px 0px rgb(204,5,5), -1px 1px rgb(192,0,0),
+    -2px 1px rgb(203,4,4), -2px 2px rgb(191,0,0),
+    -3px 2px rgb(202,3,3), -3px 3px rgb(190,0,0),
+    -4px 3px rgb(201,2,2), -4px 4px rgb(189,0,0),
+    -5px 4px rgb(200,1,1), -5px 5px rgb(188,0,0),
+    -6px 5px rgb(199,0,0), -6px 6px rgb(187,0,0),
+    -7px 6px rgb(198,0,0), -7px 7px rgb(186,0,0),
+    -8px 7px rgb(197,0,0), -8px 8px rgb(185,0,0),
+    -7px 9px 1px rgba(0,0,0,.4),
+    -5px 11px 1px rgba(0,0,0,.2),
+    -1px 13px 4px rgba(0,0,0,.2),
+    4px 16px 7px rgba(0,0,0,.3);
+    transition: .4s;
+}
+.btn:active, .container>a:active 
+{
+    box-shadow: none;
+    -webkit-transform: translate(-7px, 8px);
+    transform: translate(-7px, 8px);
+}
+@media(max-width: 900px)
+{
+    .resalt_img>img
+    {
+        width: 90%;
+    }
+    .lotip
+    {
+        width: 300px;
+    }
+}
+@media(max-width: 600px)
+{
+    .preference select
+    {
+        width: 90%;
+    }
+}
+@media(max-width: 400px)
+{
+    .resalt_img>img
+    {
+       height: 150px
+    }
+    .lotip
+    {
+        width: 100%;
+    }
+}

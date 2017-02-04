@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.7.2.min.js"></script>
+</head>
+<body>
+   <div class="result block">
+         <header>
+            <div class="lotip"></div>
+        </header>
+        <div class="content"></div>
+    </div>
+    <div class="preference block">
+        <header>
+            <h1>якими будуть ваші критерії</h1>
+        </header>
+        <div class="content no-overflow">
+            <div class="list">
+                <div class="option">
+                    <label>Вид техніки</label>
+                    <select id="clas"> <!--combo box--->
+                        <option>--/--</option>
+                        <option value="LT">ЛТ</option>
+                        <option value="CT">СТ</option>
+                        <option value="TT">ТТ</option>
+                        <option value="PT">ПТ</option>
+                        <option value="CAU">САУ</option>
+                        <option value="plans">Літак</option>
+                        <option value="ship">Корабель</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>Спосіб пересування</label>
+                    <select id="peresuvannia"> <!--combo box--->
+                        <option>--/--</option>
+                        <option value="susha">Суша</option>
+                        <option value="voz">Воздух</option>
+                        <option value="more">Море</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>Нація</label>
+                    <select id="contry">
+                        <option>--/--</option>
+                        <option value="CCCR">СССР</option>
+                        <option value="Germany">Германія</option>
+                        <option value="French">Франція</option>
+                        <option value="Japan">Японія</option>
+                        <option value="China">Китай</option>
+                        <option value="USA">США</option>
+                        <option value="Englend">Англія</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>Калібр</label>
+                    <select id="caliber">
+                        <option>--/--</option>
+                        <option value="BL-9">122 mm BL-9</option>
+                        <option value="L/55">128 mm</option>
+                        <option value="SA50">75 mm</option>
+                        <option value="H-37">37 mm</option>
+                        <option value="60-100T">100 mm</option>
+                        <option value="Mörser 18/1">210 mm</option>
+                        <option value="Mk15">203 mm</option>
+                    </select>
+                </div> 
+                <div class="option">
+                    <label >Прочность (HP.)</label>
+                    <select id="life">
+                       <option>--/--</option>
+                        <option value="50hp">50 HP</option>
+                        <option value="70hp">70 HP</option>
+                        <option value="100hp">100 HP</option>
+                        <option value="150hp">150 HP</option>
+                        <option value="200hp">200 HP</option>
+                        <option value="250hp">252 HP</option>
+                        <option value="300hp">300 HP</option>
+                        <option value="350hp">350 HP</option>
+                        <option value="400hp">400 HP</option>
+                        <option value="450hp">450 HP</option>
+                        <option value="500hp">500 HP</option>
+                        <option value="550hp">550 HP</option>
+                        <option value="600hp">600 HP</option>
+                        <option value="650hp">650 HP</option>
+                        <option value="700hp">700 HP</option>
+                        <option value="750hp">750 HP</option>
+                        <option value="800hp">800 HP</option>
+                        <option value="850hp">850 HP</option>
+                        <option value="900hp">900 HP</option>
+                        <option value="950hp">950 HP</option>
+                        <option value="1000hp">1000 HP</option>
+                        <option value="1100hp">1100 HP</option>
+                        <option value="1200hp">1200 HP</option>
+                        <option value="1300hp">1300 HP</option>
+                        <option value="1400hp">1400 HP</option>
+                        <option value="1500hp">1500 HP</option>
+                        <option value="1600hp">1600 HP</option>
+                        <option value="1700hp">1700 HP</option>
+                        <option value="1800hp">1800 HP</option>
+                        <option value="1900hp">1900 HP</option>
+                        <option value="2000hp">2000 HP</option>
+                        <option value="2100hp">2100 HP</option>
+                        <option value="2200hp">2200 HP</option>
+                        <option value="2300hp">2300 HP</option>
+                        <option value="2400hp">2400 HP</option>
+                        <option value="2500hp">2500 HP</option>
+                        <option value="2600hp">2600 HP</option>
+                        <option value="2700hp">2700 HP</option>
+                        <option value="2800hp">2800 HP</option>
+                        <option value="2900hp">2900 HP</option>
+                        <option value="3000hp">3000 HP</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>Мощность (л.с.)</label>
+                    <select id="power">
+                       <option>--/--</option>
+                        <option value="50ls">50 л.с.</option>
+                        <option value="70ls">70 л.с.</option>
+                        <option value="100ls">100 л.с.</option>
+                        <option value="150ls">150 л.с.</option>
+                        <option value="200ls">200 л.с.</option>
+                        <option value="250ls">252 л.с.</option>
+                        <option value="300ls">300 л.с.</option>
+                        <option value="350ls">350 л.с.</option>
+                        <option value="400ls">400 л.с.</option>
+                        <option value="450ls">450 л.с.</option>
+                        <option value="500ls">500 л.с.</option>
+                        <option value="550ls">550 л.с.</option>
+                        <option value="600ls">600 л.с.</option>
+                        <option value="650ls">650 л.с.</option>
+                        <option value="700ls">700 л.с.</option>
+                        <option value="750ls">750 л.с.</option>
+                        <option value="800ls">800 л.с.</option>
+                        <option value="850ls">850 л.с.</option>
+                        <option value="900ls">900 л.с.</option>
+                        <option value="950ls">950 л.с.</option>
+                        <option value="1000ls">1000 л.с.</option>
+                        <option value="1100ls">1100 л.с.</option>
+                        <option value="1200ls">1200 л.с.</option>
+                        <option value="1300ls">1300 л.с.</option>
+                        <option value="1400ls">1400 л.с.</option>
+                        <option value="1500ls">1500 л.с.</option>
+                        <option value="1600ls">1600 л.с.</option>
+                        <option value="1700ls">1700 л.с.</option>
+                        <option value="120000 ">120 000  л.с.</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>Максимальная скорость (км/ч.- уз.)</label>
+                    <select id="speed">
+                       <option>--/--</option>
+                        <option value="15k">15 (км/ч.)</option>
+                        <option value="20k">20 (км/ч.)</option>
+                        <option value="25k">25 (км/ч.)</option>
+                        <option value="30k">30 (км/ч.)</option>
+                        <option value="35k">35 (км/ч.)</option>
+                        <option value="40k">40 (км/ч.)</option>
+                        <option value="27uz">27 (уз.)</option>
+                        <option value="35uz">35 (уз.)</option>
+                        <option value="45k">45 (км/ч.)</option>
+                        <option value="50k">50 (км/ч.)</option>
+                        <option value="55k">55 (км/ч.)</option>
+                        <option value="60k">60 (км/ч.)</option>
+                        <option value="410k">410 (км/ч.)</option>
+                        <option value="500k">500 (км/ч.)</option>
+                    </select>
+                </div> 
+                <div class="option">
+                    <label>Скорость крена (*/с.)</label>
+                    <select id="speed_k">
+                       <option>--/--</option>
+                        <option value="15kre">80 (*/с.)</option>
+                        <option value="20kre">65 (*/с.)</option>
+                    </select>
+                </div> 
+                 <div class="option">
+                    <label>Время перекладки руля (с.)</label>
+                    <select id="rul">
+                       <option>--/--</option>
+                        <option value="25s">25 (с.)</option>
+                        <option value="10s">10 (с.)</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>Скорость поворота (град./с.)</label>
+                    <select id="speed_turn">
+                      <option>--/--</option>
+                       <option value="15gc">15 (град./с.)</option>
+                        <option value="20gs">20 (град./с.)</option>
+                        <option value="25gs">25 (град./с.)</option>
+                        <option value="30gs">30 (град./с.)</option>
+                        <option value="35gs">35 (град./с.)</option>
+                        <option value="40gs">40 (град./с.)</option>
+                        <option value="45gs">45 (град./с.)</option>
+                        <option value="50gs">50 (град./с.)</option>
+                        <option value="55gs">55 (град./с.)</option>
+                        <option value="60gs">60 (град./с.)</option>
+                        <option value="65gs">65 (град./с.)</option>
+                        <option value="70gs">70 (град./с.)</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>Скорость поворота башни (град./с.)</label>
+                    <select id="speed_turn_tower">
+                       <option>--/--</option>
+                        <option value="15gcb">15 (град./с.)</option>
+                        <option value="20gsb">20 (град./с.)</option>
+                        <option value="25gsb">25 (град./с.)</option>
+                        <option value="30gsb">30 (град./с.)</option>
+                        <option value="35gsb">35 (град./с.)</option>
+                        <option value="40gsb">40 (град./с.)</option>
+                        <option value="45gsb">45 (град./с.)</option>
+                        <option value="50gsb">50 (град./с.)</option>
+                        <option value="55gsb">55 (град./с.)</option>
+                        <option value="60gsb">60 (град./с.)</option>
+                        <option value="65gsb">65 (град./с.)</option>
+                        <option value="70gsb">70 (град./с.)</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>Бронирование корпуса (мм.)</label>
+                    <select id="Reservations_housing">
+                       <option>--/--</option>
+                        <option value="1od">28/28/25 (мм.)</option>
+                        <option value="2od">50/20/15 (мм.)</option>
+                        <option value="3od">120/50/31 (мм.)</option>
+                        <option value="4od">100/80/45 (мм.)</option>
+                        <option value="5od">110/90/60 (мм.)</option>
+                        <option value="6od">200/185/160 (мм.)</option>
+                        <option value="7od">305/152/50 (мм.)</option>
+                        <option value="8od">187/100/50 (мм.)</option>
+                        <option value="9od">40/30/25 (мм.)</option>
+                        <option value="10od">80/50/40 (мм.)</option>
+                    </select>
+                </div>
+                <div class="option">
+                     <label>Бронирование башни (мм.)</label>
+                    <select id="Reservations_tower">
+                       <option class="nul">--/--</option>
+                        <option value="1odb">38/31/31 (мм.)</option>
+                        <option value="2odb">40/20/20 (мм.)</option>
+                        <option value="3odb">198/152/95 (мм.)</option>
+                        <option value="4odb">240/130/60 (мм.)</option>
+                        <option value="5odb">220/110/110 (мм.)</option>
+                        <option value="6odb">240/210/210 (мм.)</option>
+                    </select>
+                </div>
+                <div class="option">
+                     <label>Урон базовым снарядом (HP.)</label>
+                    <select id="damage">
+                       <option>--/--</option>
+                        <option value="1hpp">30-50 HP</option>
+                        <option value="2hpp">101-169 HP</option>
+                        <option value="3hpp">293-488 HP</option>
+                        <option value="4hpp">188-313 HP</option>
+                        <option value="5hpp">293-488 HP</option>
+                        <option value="6hpp">368-613 HP</option>
+                        <option value="7hpp">563-938 HP</option>
+                        <option value="8hpp">240-400 HP</option>
+                        <option value="9hpp">713-1,188 HP</option>
+                        <option value="10hpp">1,050-1,750 HP</option>
+                    </select>
+                </div>
+                <div class="option">
+                     <label>Бронепробиваемость базовым снарядом (мм.)</label>
+                    <select id="proboina">
+                       <option>--/--</option>
+                        <option value="1odm">28/28/25 (мм.)</option>
+                        <option value="2odm">50/20/15 (мм.)</option>
+                        <option value="3odm">120/50/31 (мм.)</option>
+                        <option value="4odm">100/80/45 (мм.)</option>
+                        <option value="5odm">110/90/60 (мм.)</option>
+                        <option value="6odm">200/185/160 (мм.)</option>
+                        <option value="7odm">305/152/50 (мм.)</option>
+                        <option value="8odm">187/100/50 (мм.)</option>
+                        <option value="9odm">40/30/25 (мм.)</option>
+                        <option value="10odm">80/50/40 (мм.)</option>
+                    </select>
+                </div>
+                <div class="option">
+                     <label>Скорострельность (выстр./мин.)</label>
+                    <select id="rate">
+                       <option>--/--</option>
+                        <option value="1m">10 (выстр./мин.)</option>
+                        <option value="2m">30 (выстр./мин.)</option>
+                        <option value="3m">7 (выстр./мин.)</option>
+                        <option value="4m">9 (выстр./мин.)</option>
+                        <option value="5m">12 (выстр./мин.)</option>
+                        <option value="6m">8 (выстр./мин.)</option>
+                        <option value="7m">5 (выстр./мин.)</option>
+                        <option value="8m">6 (выстр./мин.)</option>
+                        <option value="9m">4 (выстр./мин.)</option>
+                        <option value="10m">3 (выстр./мин.)</option>
+                    </select>
+                </div>
+                <div class="option">
+                     <label>Обзор (м.)</label>
+                    <select id="review">
+                       <option>--/--</option>
+                        <option value="1ob">340 (м.)</option>
+                        <option value="2ob">400 (м.)</option>
+                        <option value="3ob">410 (м.)</option>
+                        <option value="4ob">380 (м.)</option>
+                        <option value="5ob">358 (м.)</option>
+                        <option value="6ob">370 (м.)</option>
+                        <option value="7ob">330 (м.)</option>
+                    </select>
+                </div>
+                <div class="option">
+                     <label>Дальность связи (м.)</label>
+                    <select id="connectivity">
+                        <option>--/--</option>
+                         <option value="1ds">412 (м.)</option>
+                        <option value="2ds">400 (м.)</option>
+                        <option value="3ds">782 (м.)</option>
+                        <option value="4ds">626 (м.)</option>
+                        <option value="5ds">746 (м.)</option>
+                        <option value="6ds">751 (м.)</option>
+                        <option value="7ds">395 (м.)</option>
+                        <option value="8ds">730 (м.)</option>
+                        <option value="9ds">323 (м.)</option>
+                    </select>
+                </div>
+            </div>
+            <button id="check" class="btn" type="button">Проверить</button>
+        </div>
+    </div>
+<script src="js.js"></script>
+
+
+</body>
+</html>
